@@ -11,6 +11,7 @@ using System.Diagnostics;
 using TDD.DbTestHelpers.Yaml;
 using TDD.DbTestHelpers.Core;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 
 namespace Blog.DAL.Tests
@@ -32,6 +33,7 @@ namespace Blog.DAL.Tests
     [TestClass]
     public class RepositoryTests
     {
+        
 
         public class DbBaseTest<BlogFixtures>
         {
@@ -39,18 +41,12 @@ namespace Blog.DAL.Tests
         }
 
         [TestMethod]
-        public void OneShouldBeOne()
-        {
-            // assert
-            Assert.AreEqual(1, 1);
-        }
-
-        /*[TestMethod]
         public void GetAllPost_ThreePostsInDb_ReturnThreePosts()
         {
             // arrange
             var repository = new BlogRepository();
-            Setup();
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Baza"));
+            //Setup();
 
             // act
             var result = repository.GetAllPosts();
@@ -63,7 +59,8 @@ namespace Blog.DAL.Tests
         {
             // arrange
             var repository = new BlogRepository();
-            Setup();
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Baza"));
+            //Setup();
 
             // act
             var results = repository.GetAllPosts();
@@ -86,7 +83,8 @@ namespace Blog.DAL.Tests
         {
             // arrange
             var repository = new BlogRepository();
-            Setup();
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Baza"));
+            //Setup();
 
             // act
             var context = new BlogContext();
@@ -106,7 +104,8 @@ namespace Blog.DAL.Tests
         {
             // arrange
             var repository = new BlogRepository();
-            Setup();
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Baza"));
+            //Setup();
 
             // act
             var context = new BlogContext();
@@ -123,7 +122,7 @@ namespace Blog.DAL.Tests
             }
             // assert
             Assert.AreEqual(contents, "komentarz do postu 2, ");
-        }*/
+        }
 
         public void Setup()
         {
