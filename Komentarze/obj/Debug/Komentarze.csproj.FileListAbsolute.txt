@@ -11,6 +11,12 @@ D:\sab\Blog\Komentarze\obj\Debug\Komentarze.Properties.Resources.resources
 D:\sab\Blog\Komentarze\obj\Debug\Komentarze.csproj.GenerateResource.Cache
 D:\sab\Blog\Komentarze\obj\Debug\Komentarze.exe
 D:\sab\Blog\Komentarze\obj\Debug\Komentarze.pdb
+<<<<<<< HEAD
 D:\sab\Blog2\Komentarze\bin\Debug\Komentarze.exe.config
 D:\sab\Blog2\Komentarze\obj\Debug\Komentarze.exe
 D:\sab\Blog2\Komentarze\obj\Debug\Komentarze.pdb
+=======
+D:\sab\Blog - Copy\Komentarze\bin\Debug\Komentarze.exe.config
+D:\sab\Blog - Copy\Komentarze\obj\Debug\Komentarze.exe
+D:\sab\Blog - Copy\Komentarze\obj\Debug\Komentarze.pdb
+>>>>>>> origin/master

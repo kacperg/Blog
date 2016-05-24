@@ -11,6 +11,7 @@ using System.Diagnostics;
 using TDD.DbTestHelpers.Yaml;
 using TDD.DbTestHelpers.Core;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 
 namespace Blog.DAL.Tests
@@ -32,6 +33,7 @@ namespace Blog.DAL.Tests
     [TestClass]
     public class RepositoryTests
     {
+        
 
         public class DbBaseTest<BlogFixtures>
         {
@@ -45,7 +47,6 @@ namespace Blog.DAL.Tests
             List<Post> posty = new List<Post>();
             List<Comment> komentarze = new List<Comment>();
             Setup(posty, komentarze);
-            
 
             // act
             int ile = posty.Count();
